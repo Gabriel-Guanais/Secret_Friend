@@ -60,33 +60,15 @@ header {
 }
 
 
-/* part of usr */
-/* .input-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 50%;
-    width: auto;
-}
-
-
-.input-box-titulo{
-    font-size: 1rem;
-    font-family: var(--font-start);
-    color: var(--titulo-color);
-}
-
-form label{
-    display: block;
-} */
 .input-box{
+    display: flex;
+    gap: 2rem; 
     margin-left: 5%;
     margin-right: 5%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 90%;
+    justify-content: space-around;
+    width: 90%; 
+    margin-bottom: 110px;
 }
 .input-container-usr{
     display: flex;
@@ -138,14 +120,36 @@ form label {
     background-color: #684cbd;
 }
 
+#listaNomes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #2a2a3c;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    width: 300px;
+    color: var(--titulo-color);
+    font-family: var(--font-start);
+    font-size: 1rem;
+}
+
+.lista-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #7f5af033;
+}
+
 
 
 footer {
     background: #35424a;
     color: #ffffff;
     text-align: center;
-    padding: 10px 0;
+    padding: 30px 0;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: var(--font-start);
 }
