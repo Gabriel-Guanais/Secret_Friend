@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Reset criado por Gabriel Correa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+  
+body {
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos toda a tela */
+}
+
+ul, ol {
+    list-style: none; /* Tira bolinha das listas */
+    font: inherit;
+}
+
+img {
+    max-width: 100%; /* Imagens não ultrapassam o tamanho do container */
+    display: block; /* Remove espaço embaixo da imagem */
+}
+
+a {
+    text-decoration: none; /* Tira o sublinhado dos links */
+}
+
+button, input {
+    font: inherit; /* Usa a mesma fonte do body */
+    border: none; /* Remove borda padrão */
+    background: none; /* Remove fundo cinza do botão */
+}

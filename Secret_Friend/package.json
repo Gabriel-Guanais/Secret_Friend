@@ -1,0 +1,23 @@
+{
+  "name": "web-development-project",
+  "version": "1.0.0",
+  "description": "A simple web development project using HTML, CSS, and JavaScript.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build step not defined'"
+  },
+  "keywords": [
+    "web",
+    "development",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Gabriel Corrêa de Abreu Guanais",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #16161a;
+    --titulo-color: #fffffe;
+    --paragraph-color: #94a1b2;
+    --button-color: #7f5af0;
+    --button-button-text:#fffffe;
+    --font-start:  "Press Start 2P", system-ui;
+    --link-hover-text-decoration: underline;
+    --border-radius: 1rem;
+    --transition: 0.3s;
+}
+
+
+body{
+    background-color: var(--primary-color) ; 
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* .presentation {
+
+} */
+
+.presentation-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin-right: 5%;
+    margin-left: 5%;
+    height: 50%;
+}
+
+.presetation-titulo{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: var(--font-start);
+    color: var(--titulo-color);
+}
+
+.presetation-paragrafo{
+    font-size: 1rem;
+    width: 80%;
+    font-family: var(--font-start);
+    color: var(--paragraph-color);
+}
+
+.presetation-img{
+    width: 35%;
+    border-radius: var(--border-radius);
+}
+
+
+/* part of usr */
+/* .input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: auto;
+}
+
+
+.input-box-titulo{
+    font-size: 1rem;
+    font-family: var(--font-start);
+    color: var(--titulo-color);
+}
+
+form label{
+    display: block;
+} */
+.input-box{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+.input-container-usr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input{
+    padding: 30px;
+    border: 1px solid #7f5af0;
+    border-radius: 20px;
+    width: 100%;
+    color: var(--button-button-text);
+    font-family: var(--font-start);
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font-start);
+    color: #fffffe;
+}
+
+form label {
+    display: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-button{
+    padding: 20px;
+    background-color: var(--button-color);
+    color: var(--button-button-text);
+    border-radius: 20px;
+    font-family: var(--font-start);
+    
+}
+
+.input-button:hover {
+    background-color: #684cbd;
+}
+
+
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #nomes-lista {
+            margin-top: 10px;
+        }
+        .nome {
+            background: #ddd;
+            padding: 5px;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        #resultado {
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Jogo do Amigo Secreto 🎁</h2>
+
+    <input type="text" id="nomeInput" placeholder="Digite um nome">
+    <button onclick="adicionarNome()">Adicionar</button>
+
+    <div id="nomes-lista"></div>
+
+    <button onclick="sortearNome()">Sortear</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        let nomes = [];
+
+        function adicionarNome() {
+            let input = document.getElementById("nomeInput");
+            let nome = input.value.trim();
+
+            if (nome === "") {
+                alert("Digite um nome válido!");
+                return;
+            }
+
+            nomes.push(nome);
+            input.value = ""; // Limpa o campo após adicionar
+            atualizarLista();
+        }
+
+        function atualizarLista() {
+            let lista = document.getElementById("nomes-lista");
+            lista.innerHTML = ""; // Limpa a lista antes de atualizar
+
+            nomes.forEach((nome, index) => {
+                let span = document.createElement("span");
+                span.classList.add("nome");
+                span.innerText = nome;
+                lista.appendChild(span);
+            });
+        }
+
+        function sortearNome() {
+            if (nomes.length === 0) {
+                alert("Adicione pelo menos um nome antes de sortear!");
+                return;
+            }
+
+            let indiceSorteado = Math.floor(Math.random() * nomes.length);
+            let nomeSorteado = nomes[indiceSorteado];
+
+            document.getElementById("resultado").innerText = `🎉 Nome sorteado: ${nomeSorteado}`;
+        }
+    </script>
+
+</body>
+</html>
